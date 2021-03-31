@@ -108,7 +108,6 @@ body {
 .content {
   max-width: 1200px;
   margin: auto;
-  height: 779px;
 }
 
 .header {
@@ -150,19 +149,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .navigate__item {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   margin-right: 61px;
+}
+
+.navigate__item:last-child {
+  margin: 0;
 }
 
 .navigate__link {
@@ -228,5 +225,83 @@ body {
   font-size: 23px;
   line-height: 27px;
   color: white;
+}
+
+.main {
+  background-color: #cccccc;
+  height: 1368px;
+  padding-top: 120px;
+}
+
+.main__title {
+  font-size: 48px;
+  line-height: 72px;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main__subtitle {
+  text-align: center;
+  font-size: 24px;
+  line-height: 36px;
+  color: #666666;
+  margin-bottom: 120px;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider__arrow {
+  width: 30px;
+  height: 70px;
+}
+
+.slider__arrow_left {
+  background: url("../assets/images/icons/slider-left.svg") center no-repeat;
+  margin-right: 30px;
+}
+
+.slider__arrow_right {
+  background: url("../assets/images/icons/slider-right.svg") center no-repeat;
+  margin-left: 30px;
+}
+
+.slider__image {
+  padding: 0 30px;
+}
+
+.slider__image figure {
+  position: relative;
+}
+
+.slider__image figure figcaption {
+  position: absolute;
+  color: white;
+  text-align: center;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+.slider__image figure figcaption h3 {
+  font-size: 22px;
+  line-height: 36px;
+  margin-bottom: 10px;
+}
+
+.slider__image figure figcaption p {
+  font-size: 17px;
+  line-height: 27px;
+  margin-bottom: 40px;
 }
 /*# sourceMappingURL=style.css.map */
