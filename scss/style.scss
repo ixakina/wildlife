@@ -229,6 +229,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 239px;
 
   &__arrow {
     width: 30px;
@@ -272,14 +273,133 @@ body {
 }
 .form {
   &__title {
+    font-size: 27px;
+    line-height: 40px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 61px;
   }
 
   &__field {
+    display: flex;
+    justify-content: center;
+    font-family: $font-add;
   }
 
   &__textarea {
+    width: 540px;
+    height: 60px;
+    border: 1px solid #666666;
+    background: transparent;
+    align-items: center;
+    color: #666666;
+    padding: 0 15px;
+
+    font-size: 23px;
+    line-height: 27px;
   }
 
   &__button {
+    width: 120px;
+    height: 60px;
+    font-size: 23px;
+    line-height: 27px;
+    color: $color-text;
+    background: #cd6326;
+    border: 1px solid #cd6326;
+    border-radius: 0px 5px 5px 0px;
+  }
+}
+
+// footer
+
+.footer {
+  background: #02160b;
+}
+
+.wrapper-footer {
+  max-width: 1440px;
+  margin: auto;
+  background: url("../assets/images/bg-footer.png") 0 0 / cover no-repeat;
+  height: 359px;
+}
+
+.content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 150px 0;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__pic {
+    margin-right: 15px;
+  }
+
+  &__text {
+    font-family: $font-add;
+    font-size: 32px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: $color-text;
+  }
+}
+
+.navigate {
+  &__list {
+  }
+
+  &__item {
+    &_footer {
+      margin-right: 85px;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+
+  &__link {
+  }
+}
+.contact-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  li {
+    padding-right: 27px;
+    &:last-child {
+      padding-right: 0px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+
+    &_facebook {
+      background: url("../assets/images/icons/facebook.svg") 0 0 / cover no-repeat;
+    }
+
+    &_instagram {
+      background: url("../assets/images/icons/instagram.svg") 0 0 / cover no-repeat;
+    }
+
+    &_pinterest {
+      background: url("../assets/images/icons/pinterest.svg") 0 0 / cover no-repeat;
+    }
+
+    &_telegram {
+      background: url("../assets/images/icons/telegram.svg") 0 0 / cover no-repeat;
+    }
   }
 }
