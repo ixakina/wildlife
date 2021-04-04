@@ -101,7 +101,7 @@ body {
 .wrapper {
   max-width: 1440px;
   margin: auto;
-  background: url("../assets/images/bg-head.png") 0 0/cover no-repeat;
+  background: url("../assets/images/bg-head.png") center/cover no-repeat;
   height: 779px;
 }
 
@@ -168,12 +168,20 @@ body {
   color: white;
 }
 
+.navigate__link:hover {
+  color: #cd6326;
+}
+
 .navigate__search-icon {
   display: inline-block;
   width: 32px;
   height: 32px;
   background: url("../assets/images/icons/search.svg") center no-repeat;
   vertical-align: middle;
+}
+
+.navigate__search-icon:hover {
+  background: url("../assets/images/icons/search-hover.svg") center no-repeat;
 }
 
 .navigate__button {
@@ -188,6 +196,10 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 23px;
   line-height: 27px;
+}
+
+.navigate__button:hover {
+  background: #cd6326;
 }
 
 .hero__info {
@@ -225,6 +237,14 @@ body {
   font-size: 23px;
   line-height: 27px;
   color: white;
+}
+
+.info__button:hover {
+  background-color: #e39128;
+}
+
+.info__button:active {
+  background-color: #8f5613;
 }
 
 .main {
@@ -272,9 +292,17 @@ body {
   margin-right: 30px;
 }
 
+.slider__arrow_left:hover {
+  background: url("../assets/images/icons/slide-left-hover.svg") center no-repeat;
+}
+
 .slider__arrow_right {
   background: url("../assets/images/icons/slider-right.svg") center no-repeat;
   margin-left: 30px;
+}
+
+.slider__arrow_right:hover {
+  background: url("../assets/images/icons/slide-right-hover.svg") center no-repeat;
 }
 
 .slider__image {
@@ -338,6 +366,10 @@ body {
   line-height: 27px;
 }
 
+.form__textarea:focus {
+  background-color: white;
+}
+
 .form__button {
   width: 120px;
   height: 60px;
@@ -347,6 +379,7 @@ body {
   background: #cd6326;
   border: 1px solid #cd6326;
   border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
 }
 
 .footer {
@@ -356,7 +389,7 @@ body {
 .wrapper-footer {
   max-width: 1440px;
   margin: auto;
-  background: url("../assets/images/bg-footer.png") 0 0/cover no-repeat;
+  background: url("../assets/images/bg-footer.png") center/cover no-repeat;
   height: 359px;
 }
 
@@ -434,18 +467,34 @@ body {
 }
 
 .contact-list__link_facebook {
-  background: url("../assets/images/icons/facebook.svg") 0 0/cover no-repeat;
+  background: url("../assets/images/icons/facebook.svg") center/cover no-repeat;
+}
+
+.contact-list__link_facebook:hover {
+  background: url("../assets/images/icons/facebook-hover.svg") center/cover no-repeat;
 }
 
 .contact-list__link_instagram {
-  background: url("../assets/images/icons/instagram.svg") 0 0/cover no-repeat;
+  background: url("../assets/images/icons/instagram.svg") center/cover no-repeat;
+}
+
+.contact-list__link_instagram:hover {
+  background: url("../assets/images/icons/instagram-hover.svg") center/cover no-repeat;
 }
 
 .contact-list__link_pinterest {
-  background: url("../assets/images/icons/pinterest.svg") 0 0/cover no-repeat;
+  background: url("../assets/images/icons/pinterest.svg") center/cover no-repeat;
+}
+
+.contact-list__link_pinterest:hover {
+  background: url("../assets/images/icons/pinterest-hover.svg") center/cover no-repeat;
 }
 
 .contact-list__link_telegram {
-  background: url("../assets/images/icons/telegram.svg") 0 0/cover no-repeat;
+  background: url("../assets/images/icons/telegram.svg") center/cover no-repeat;
+}
+
+.contact-list__link_telegram:hover {
+  background: url("../assets/images/icons/telegram-hover.svg") center/cover no-repeat;
 }
 /*# sourceMappingURL=style.css.map */

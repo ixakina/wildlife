@@ -93,7 +93,7 @@ body {
 .wrapper {
   max-width: 1440px;
   margin: auto;
-  background: url("../assets/images/bg-head.png") 0 0 / cover no-repeat;
+  background: url("../assets/images/bg-head.png") center / cover no-repeat;
   height: 779px;
 }
 .content {
@@ -143,6 +143,9 @@ body {
     font-size: 23px;
     line-height: 60px;
     color: $color-text;
+    &:hover {
+      color: $color-main;
+    }
   }
 
   &__search-icon {
@@ -151,6 +154,9 @@ body {
     height: 32px;
     background: url("../assets/images/icons/search.svg") center no-repeat;
     vertical-align: middle;
+    &:hover {
+      background: url("../assets/images/icons/search-hover.svg") center no-repeat;
+    }
   }
 
   &__button {
@@ -164,6 +170,9 @@ body {
     font-family: $font-add;
     font-size: 23px;
     line-height: 27px;
+    &:hover {
+      background: $color-main;
+    }
   }
 }
 
@@ -199,6 +208,12 @@ body {
     font-size: 23px;
     line-height: 27px;
     color: $color-text;
+    &:hover {
+      background-color: #e39128;
+    }
+    &:active {
+      background-color: #8f5613;
+    }
   }
 }
 
@@ -238,11 +253,17 @@ body {
     &_left {
       background: url("../assets/images/icons/slider-left.svg") center no-repeat;
       margin-right: 30px;
+      &:hover {
+        background: url("../assets/images/icons/slide-left-hover.svg") center no-repeat;
+      }
     }
 
     &_right {
       background: url("../assets/images/icons/slider-right.svg") center no-repeat;
       margin-left: 30px;
+      &:hover {
+        background: url("../assets/images/icons/slide-right-hover.svg") center no-repeat;
+      }
     }
   }
 
@@ -294,9 +315,11 @@ body {
     align-items: center;
     color: #666666;
     padding: 0 15px;
-
     font-size: 23px;
     line-height: 27px;
+    &:focus {
+      background-color: $color-text;
+    }
   }
 
   &__button {
@@ -308,6 +331,7 @@ body {
     background: #cd6326;
     border: 1px solid #cd6326;
     border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
   }
 }
 
@@ -320,7 +344,7 @@ body {
 .wrapper-footer {
   max-width: 1440px;
   margin: auto;
-  background: url("../assets/images/bg-footer.png") 0 0 / cover no-repeat;
+  background: url("../assets/images/bg-footer.png") center / cover no-repeat;
   height: 359px;
 }
 
@@ -387,19 +411,31 @@ body {
     height: 40px;
 
     &_facebook {
-      background: url("../assets/images/icons/facebook.svg") 0 0 / cover no-repeat;
+      background: url("../assets/images/icons/facebook.svg") center / cover no-repeat;
+      &:hover {
+        background: url("../assets/images/icons/facebook-hover.svg") center / cover no-repeat;
+      }
     }
 
     &_instagram {
-      background: url("../assets/images/icons/instagram.svg") 0 0 / cover no-repeat;
+      background: url("../assets/images/icons/instagram.svg") center / cover no-repeat;
+      &:hover {
+        background: url("../assets/images/icons/instagram-hover.svg") center / cover no-repeat;
+      }
     }
 
     &_pinterest {
-      background: url("../assets/images/icons/pinterest.svg") 0 0 / cover no-repeat;
+      background: url("../assets/images/icons/pinterest.svg") center / cover no-repeat;
+      &:hover {
+        background: url("../assets/images/icons/pinterest-hover.svg") center / cover no-repeat;
+      }
     }
 
     &_telegram {
-      background: url("../assets/images/icons/telegram.svg") 0 0 / cover no-repeat;
+      background: url("../assets/images/icons/telegram.svg") center / cover no-repeat;
+      &:hover {
+        background: url("../assets/images/icons/telegram-hover.svg") center / cover no-repeat;
+      }
     }
   }
 }
